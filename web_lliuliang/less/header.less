@@ -1,0 +1,39 @@
+/*header*/
+@import "reset";
+@headerh:50px;
+.header{
+  width:100%;height:@headerh;background-color:rgba(0,0,0,.6);
+  .posi-fx();left:0;top:0;z-index:1000;
+  .auto{
+    .clearfix();
+    .logo{
+      margin-top:10px;
+      .fl();.dis-b();
+    }
+    .nav-ul{
+      .fr();.posi-re();
+      ul{
+        .clearfix();
+        li{
+          .fl();
+          line-height:@headerh;
+          a{
+            .dis-b();.fz16();.colF();
+            padding:0 20px;
+          }
+          &:hover,&.active{
+            a{
+              .colBase();
+              .transition(color);
+            }
+          }
+        }
+      }
+      .line{
+        height:3px;
+        .posi-ab();bottom:0;left:0;width:72px;
+        background-color:@colBase;
+      }
+    }
+  }
+}

@@ -1,0 +1,136 @@
+/*E家政管理系统 基础公用样式*/
+.colBase {
+  color: #eccf0c;
+}
+.colF {
+  color: #fff;
+}
+.bgBase {
+  background-color: #eccf0c;
+}
+.bgF {
+  background-color: #fff;
+}
+.bor {
+  border: 1px solid #eccf0c;
+}
+.posi-re {
+  position: relative;
+}
+.posi-ab {
+  position: absolute;
+}
+.posi-fx {
+  position: fixed;
+}
+.text-c {
+  text-align: center;
+}
+.text-r {
+  text-align: right;
+}
+.text-l {
+  text-align: left;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.fn {
+  float: none;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.fz0 {
+  font-size: 0;
+}
+.fz12 {
+  font-size: 12px;
+}
+.fz14 {
+  font-size: 14px;
+}
+.fz16 {
+  font-size: 16px;
+}
+.fz18 {
+  font-size: 18px;
+}
+.fz20 {
+  font-size: 20px;
+}
+.dis-b {
+  display: block;
+}
+.dis-inb {
+  display: inline-block;
+}
+.selectnone {
+  -moz-user-select: none;
+  /*火狐*/
+  -webkit-user-select: none;
+  /*webkit浏览器*/
+  -ms-user-select: none;
+  /*IE10*/
+  user-select: none;
+}
+/*css3*/
+.auto {
+  width: 1200px;
+  margin: auto;
+}
+.auto2 {
+  width: 800px;
+}
+[date-time="0.5s"] {
+  animation-duration: 0.5s !important;
+  -webkit-animation-duration: 0.5s !important;
+  -moz-animation-duration: 0.5s !important;
+  -o-animation-duration: 0.5s !important;
+}
+[date-time="0.8s"] {
+  animation-duration: 0.8s !important;
+  -webkit-animation-duration: 0.8s !important;
+  -moz-animation-duration: 0.8s !important;
+  -o-animation-duration: 0.8s !important;
+}
+[date-time="1s"] {
+  animation-duration: 1s !important;
+  -webkit-animation-duration: 1s !important;
+  -moz-animation-duration: 1s !important;
+  -o-animation-duration: 1s !important;
+}
+[date-time="1.5s"] {
+  animation-duration: 1.5s !important;
+  -webkit-animation-duration: 1.5s !important;
+  -moz-animation-duration: 1.5s !important;
+  -o-animation-duration: 1.5s !important;
+}
+[date-time="2s"] {
+  animation-duration: 2s !important;
+  -webkit-animation-duration: 2s !important;
+  -moz-animation-duration: 2s !important;
+  -o-animation-duration: 2s !important;
+}
+[date-time="2.5s"] {
+  animation-duration: 2.5s !important;
+  -webkit-animation-duration: 2.5s !important;
+  -moz-animation-duration: 2.5s !important;
+  -o-animation-duration: 2.5s !important;
+}
+[date-time="3s"] {
+  animation-duration: 3s !important;
+  -webkit-animation-duration: 3s !important;
+  -moz-animation-duration: 3s !important;
+  -o-animation-duration: 3s !important;
+}

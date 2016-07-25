@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>聚媒</title>
+    <meta name="keywords" content="聚媒"/>
+    <meta name="description" content="聚媒"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=10">
+    <link type="text/css" rel="stylesheet" href="css/main.min.css"/>
+    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage2.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(function(){
+                $('#jumei').fullpage({
+                    anchors: ['page1', 'page2', 'page3'],
+                    menu: '#menu',
+                    navigation:true
+//                    onLeave:function(anchorLink,index){
+//                        if(index==3){
+//                            $('.bq p').addClass('colBlack');
+//                        }else{
+//                            $('.bq p').removeClass('colBlack');
+//                        }
+//                    }
+                });
+            });
+        });
+        //about
+        $(function(){
+            $('.about .about-a').click(function(){
+                $(this).siblings('.about-n').removeClass('dis-n');
+                $('.about-close').removeClass('out').addClass('active');
+                $('.n').removeClass('out').addClass('active');
+            })
+            $('.about .about-close').click(function(){
+                $('.about-close').addClass('out');
+                $('.n').addClass('out');
+            })
+        })
+    </script>
+</head>
+<body>
+    <!--logo-->
+    <div class="logo">
+        <div class="logo-a"><img src="img/logo.png" alt="聚媒"/></div>
+        <div class="logo-b">为企业精准匹配网红及自媒体人</div>
+        <span class="fz"></span>
+    </div>
+    <!--版权-->
+    <div class="bq">
+        <span class="fz"></span>
+        <span class="fz2"></span>
+        <p>版权所有：北京聚媒科技有限公司</p>
+        <p>Copyright (c) 2016 jumei.link. All Rights Reserved V 1.8.5 京ICP备13015845号-1</p>
+    </div>
+    <!--联系方式-->
+    <div class="contact">
+        <!--<a href="" title=""><i class="iconfont icon-xinlang-copy"></i></a>-->
+        <a class="weixin" href="" title=""><i class="iconfont icon-weixin"></i>
+            <span><img date-time="1s" src="img/sec3-ewm.png" alt="聚媒"/></span>
+        </a>
+        <!--<a href="" title=""><i class="iconfont icon-qq"></i></a>-->
+    </div>
+    <!--关于我们-->
+    <div class="about">
+        <span class="fz"></span>
+        <span class="fz2"></span>
+        <a class="about-a" href="javascript:void(0);" title="">关于我们</a>
+        <a class="author" href="javascript:void(0);" title="">作者入口
+            <span><img date-time="1s" src="img/sec3-ewm.png" alt="聚媒"/></span>
+        </a>
+        <div class="about-n dis-n">
+            <a class="about-close" date-time="2s" title="" href="javascript:void(0);"><i class="iconfont icon-xiangyoujiantou"></i></a>
+            <div class="n" date-time="1s">
+                <div class="vm">
+                <h3>关于聚媒</h3>
+                <span></span>
+                <p>聚媒是一款企业内容营销众包工具，帮助企业用户精准搜寻各类网红和自媒体人来完成内容营销。</p>
+                <p>目前，已有数千位网红、行业意见领袖、自媒体人入驻聚媒。聚媒开创性实现为每位内容创作者进行多维度标签画像。企业用户可以通过不同的标签筛选，高效精准的匹配到各自行业相关的网红和自媒体人。</p>
+                <p>同时，聚媒也能为企业提供深度的网红整合营销方案，以直播、视频、图文等多种形式实现内容营销，并帮助企业将领导人打造为业界网红。</p>
+                <p>体验聚媒，请关注聚媒微信公众号。</p>
+                <p><img src="img/sec3-ewm.png" alt="聚媒"/></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right-line"></div>
+    <div id="jumei">
+        <div class="section section1">
+            <div class="im im1" date-time="1s"></div>
+            <img class="im im2" date-time="1.5s" src="img/ewm.png" alt="聚媒"/>
+        </div>
+        <div class="section section2">
+            <div class="im im1" date-time="1s"></div>
+            <img class="im im3" src="img/sec2-01.png" alt="聚媒"/>
+            <div class="im im4">开放渠道 <span>·</span> 一键沟通</div>
+            <div class="im im5">
+                <a href="#" class="btn1 hvr-bounce-to-bottom">立即体验</a>
+                <a href="#" class="btn2 hvr-bounce-to-bottom">入驻聚媒</a>
+            </div>
+        </div>
+        <div class="section section3">
+            <!--<img class="im im2" src="img/sec3-01.png" alt="聚媒"/>-->
+            <h3 class="im im2">深度服务 高潮迭起</h3>
+            <p class="im im3">high quality service</p>
+            <div class="im4">
+                <ul>
+                    <li>
+                        <span>
+                            <i class="iconfont icon-chuangjianquanzi"></i>
+                            创投圈公关
+                            <img src="img/sec3-ewm.png" alt="聚媒"/>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <i class="iconfont icon-zhibo"></i>
+                            直播营销
+                            <img src="img/sec3-ewm.png" alt="聚媒"/>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <i class="iconfont icon-dengpao1"></i>
+                            新媒体运营
+                            <img src="img/sec3-ewm.png" alt="聚媒"/>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <i class="iconfont icon-fabu"></i>
+                            产品发布
+                            <img src="img/sec3-ewm.png" alt="聚媒"/>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <i class="iconfont icon-micb"></i>
+                            活动与会议报道
+                            <img src="img/sec3-ewm.png" alt="聚媒"/>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <i class="iconfont icon-nanshi"></i>
+                            CEO包装
+                            <img src="img/sec3-ewm.png" alt="聚媒"/>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <i class="iconfont icon-shandian-copy"></i>
+                            危机公关
+                            <img src="img/sec3-ewm.png" alt="聚媒"/>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <i class="iconfont icon-gengduo"></i>
+                            更多深度服务
+                            <img src="img/sec3-ewm.png" alt="聚媒"/>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

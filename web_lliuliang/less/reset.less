@@ -1,0 +1,143 @@
+/*E家政管理系统 基础公用样式*/
+//color
+  @colBase:#eccf0c;
+
+  .colBase{
+    color:@colBase;
+  }
+  .colF{
+    color:#fff;
+  }
+  .bgBase{
+    background-color:@colBase;
+  }
+  .bgF{
+    background-color:#fff;
+  }
+//border
+  .bor{border:1px solid @colBase}
+
+//position
+  .posi-re{position:relative}
+  .posi-ab{position:absolute}
+  .posi-fx{position:fixed}
+
+//
+  .text-c{text-align:center}
+  .text-r{text-align:right}
+  .text-l{text-align:left}
+
+//float
+  .fl{float:left}
+  .fr{float:right}
+  .fn{float:none}
+  .clearfix{
+    zoom: 1;
+    &:after{
+      content: " ";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+    }
+  }
+//opacity
+  .opca(@data:1){
+    opacity:@data;
+  }
+//font-size
+  .fz0{font-size:0}
+  .fz12{font-size:12px}
+  .fz14{font-size:14px}
+  .fz16{font-size:16px}
+  .fz18{font-size:18px}
+  .fz20{font-size:20px}
+//dis
+  .dis-b{
+    display:block;
+  }
+  .dis-inb{
+    display:inline-block;
+  }
+//user-select
+  .selectnone{
+    -moz-user-select:none; /*火狐*/
+    -webkit-user-select:none; /*webkit浏览器*/
+    -ms-user-select:none; /*IE10*/
+    user-select:none;
+  }
+//border-radius
+  .borderRadius(@top:5px){
+    border-radius:@top;
+    -webkit-border-radius:@top;
+    -moz-border-radius:@top;
+    -ms-border-radius:@top;
+  }
+
+//transition
+.transition(@data){
+  transition:@data 0.3s;
+  -webkit-transition:@data 0.3s;
+  -moz-transition:@data 0.3s;
+  -o-transition:@data 0.3s;
+}
+//translateX
+.translateX(@data:0){
+  transform:translateX(@data);
+  -webkit-transform:translateX(@data);
+  -moz-transform:translateX(@data);
+  -o-transform:translateX(@data);
+}
+//boxShadow
+.boxShadow(@d1:0,@d2:3px,@d3:5px,@d4:rgba(0,0,0,0.1)){
+  box-shadow:@d1 @d2 @d3 @d4;
+  -webkit-box-shadow:@d1 @d2 @d3 @d4;
+  -moz-box-shadow:@d1 @d2 @d3 @d4;
+  -mos-box-shadow:@d1 @d2 @d3 @d4;
+}
+//height-line-height
+  .hei(@hei){
+    height:@hei;
+    line-height:@hei;
+  }
+//position
+  .wh(@width:0;@height:0){
+    top:50%;left:50%;
+    margin-left:-(@width/2);
+    margin-top:-(@height/2);
+  }
+/*css3*/
+  .duration(@date:0.2s){
+    animation-duration:@date !important;
+    -webkit-animation-duration:@date !important;
+    -moz-animation-duration:@date !important;
+    -o-animation-duration:@date !important;
+  }
+.auto{width:1200px;margin:auto}
+@auto2width:800px;
+.auto2{
+  width:@auto2width;
+}
+
+//data-time
+[date-time="0.5s"]{
+  .duration(0.5s);
+}
+[date-time="0.8s"]{
+  .duration(0.8s);
+}
+[date-time="1s"]{
+  .duration(1s);
+}
+[date-time="1.5s"]{
+  .duration(1.5s);
+}
+[date-time="2s"]{
+  .duration(2s);
+}
+[date-time="2.5s"]{
+  .duration(2.5s);
+}
+[date-time="3s"]{
+  .duration(3s);
+}

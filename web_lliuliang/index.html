@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E米流量</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=10">
+    <link type="text/css" rel="stylesheet" href="css/main.css"/>
+    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage2.min.js"></script>
+    <script type="text/javascript" src="js/ZoomPic.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(function(){
+                var _li = $('.header .nav-ul li');
+                var _li_width = _li.width();
+                var _line = $('.header .nav-ul .line');
+                $('#liuliang').fullpage({
+                    css3:false,
+                    anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9'],
+                    menu: '#menu',
+                    onLeave:function(anchorLink,index){
+                        var _ind = index-1;
+                        if(_ind!=8){
+                            _line.stop(true,true).animate({left:_li_width*_ind},500);
+                        }
+                        var index_dq = index;
+                        _li.hover(function(){
+                            var _index = $(this).index();
+                            _line.stop(true,true).animate({left:_li_width*_index},500);
+                        },function(){
+                            _line.stop(true,true).animate({left:_li_width*(index_dq-1)},10);
+                        })
+                    }
+                });
+            });
+            //section3
+            $('.sec-tre div').hover(function(){
+                $(this).addClass('active').siblings().removeClass('active');
+            })
+        });
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div class="auto">
+            <a class="logo" href="/" title="E米流量"><img src="img/logo.png" width="130" height="30" alt="E米流量"/></a>
+            <div class="nav-ul">
+                <ul id="menu">
+                    <li data-menuanchor="page1" class="active"><a href="#page1" title="首页">首页</a></li>
+                    <li data-menuanchor="page2"><a href="#page2" title="业务">业务</a></li>
+                    <li data-menuanchor="page3"><a href="#page3" title="优势">优势</a></li>
+                    <li data-menuanchor="page4"><a href="#page4" title="产品">产品</a></li>
+                    <li data-menuanchor="page5"><a href="#page5" title="方案">方案</a></li>
+                    <li data-menuanchor="page6"><a href="#page6" title="生态">生态</a></li>
+                    <li data-menuanchor="page7"><a href="#page7" title="资源">资源</a></li>
+                    <li data-menuanchor="page8"><a href="#page8" title="案例">案例</a></li>
+                </ul>
+                <i class="line"></i>
+            </div>
+        </div>
+    </div>
+<div id="liuliang">
+    <!--1-->
+    <div class="section section1">
+        <img date-time="0.8s" class="img1" src="img/section1-01.png" width="753" height="237" alt=""/>
+        <img date-time="1.5s" class="img2" src="img/section1-02.png" width="1027" height="449" alt=""/>
+        <p>
+            <a href="#" title="立即咨询">立即咨询</a>
+            <a href="#" title="免费试用">免费试用</a>
+        </p>
+    </div>
+    <!--2-->
+    <div class="section section2">
+        <img class="img-t" date-time=".5s" src="img/section2-t.png" width="867" height="70" alt=""/>
+        <div class="auto">
+            <ul>
+                <li date-time="1s">
+                    <span><i class="iconfont icon-kaifangicon08"></i></span>
+                    <p>开放API200+涵盖便民流量分发全渠道API涵盖便民流量分发全渠道API</p>
+                </li>
+                <li date-time="1s">
+                    <span><i class="iconfont icon-yanchi"></i></span>
+                    <p>高并发 低延迟<br/>支持亿级日API访问量</p>
+                </li>
+                <li date-time="1s">
+                    <span><i class="iconfont icon-java"></i></span>
+                    <p>提供JAVA  .NET  PHP<br/>多语言SDK<br/>为快速接入提供可能</p>
+                </li>
+                <li date-time="1s">
+                    <span><i class="iconfont icon-zhichi"></i></span>
+                    <p>专业的技术团队<br/>一流的服务团队<br/>为ISV提供全方位支持</p>
+                </li>
+                <li date-time="2s">
+                    <span><i class="iconfont icon-diannao"></i></span>
+                    <p>不限制接入终端<br/>支持PC  IOS  Android<br/>微信公众号多重接入方式</p>
+                </li>
+                <li date-time="2s">
+                    <span><i class="iconfont icon-xzbianminfuwu"></i></span>
+                    <p>高可靠性 毫秒级响应<br/>保证亿级订单零披露</p>
+                </li>
+                <li date-time="2s">
+                    <span><i class="iconfont icon-daima"></i></span>
+                    <p>一套代码 稳定易操作<br/>秒速部署拥有最佳通讯功能</p>
+                </li>
+                <li date-time="2s">
+                    <span><i class="iconfont icon-guanli"></i></span>
+                    <p>统一通讯管理平台<br/>账号一键安全登录<br/>提供清晰的统计报表</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--3-->
+    <div class="section section3">
+        <img class="img-t" src="img/section3-t.png" width="933" height="70" alt=""/>
+        <div class="sec-tre">
+            <div class="sec-tre1 active" date-time="0.5s">
+                <p>订单管理<span>Order management</span></p>
+                <div class="after"></div>
+            </div>
+            <div class="sec-tre2" date-time="0.8s">
+                <p>商品管理<span>Goods management</span></p>
+                <div class="after"></div>
+            </div>
+            <div class="sec-tre3" date-time="1s">
+                <p>用户管理<span>user management</span></p>
+                <div class="after"></div>
+            </div>
+            <div class="sec-tre4" date-time="1.5s">
+                <p>财务管理<span>Finance management</span></p>
+                <div class="after"></div>
+            </div>
+            <div class="sec-tre5" date-time="2s">
+                <p>开放平台<span>Open platform</span></p>
+                <div class="after"></div>
+            </div>
+            <div class="sec-tre6" date-time="2.5s">
+                <p>统计报告<span>Statistical report</span></p>
+                <div class="after"></div>
+            </div>
+        </div>
+        <i class="line"></i>
+    </div>
+    <!--4-->
+    <div class="section section4">
+        <img class="img-t" src="img/section4-t.png" width="933" height="70" alt=""/>
+        <div id="focus_Box">
+            <span class="prev">&nbsp;</span>
+            <span class="next">&nbsp;</span>
+            <ul>
+                <li>
+                    <a href="#"><img width="445" height="308"  alt="" src="img/section6-bg.jpg" /></a>
+                    <!--<p>-->
+                        <!--<span>Photo sharing jq22</span>-->
+                        <!--<a href="#" class="imgs-scroll-btn">分享</a>-->
+                    <!--</p>-->
+                </li>
+                <li>
+                    <a href="#"><img width="445" height="308"  alt="" src="img/section6-bg.jpg" /></a>
+                </li>
+                <li>
+                    <a href="#"><img width="445" height="308"  alt="" src="img/section6-bg.jpg" /></a>
+                </li>
+                <li>
+                    <a href="#"><img width="445" height="308"  alt="" src="img/section6-bg.jpg" /></a>
+                </li>
+                <li>
+                    <a href="#"><img width="445" height="308"  alt="" src="img/section6-bg.jpg" /></a>
+                </li>
+                <li>
+                    <a href="#"><img width="445" height="308"  alt="" src="img/section6-bg.jpg" /></a>
+                </li>
+                <li>
+                    <a href="#"><img width="445" height="308"  alt="" src="img/section6-bg.jpg" /></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--5-->
+    <div class="section section5">
+        <img class="img-t" date-time="0.5s" src="img/section5-t.png" width="933" height="70" alt=""/>
+        <div class="sec5">
+            <img class="im1" date-time="1.5s" src="img/section5-02.png" width="142" height="222" alt=""/>
+            <img class="im2" date-time="1s" src="img/section5-03.png" width="142" height="222" alt=""/>
+            <img class="im3" date-time="2.5s" src="img/section5-04.png" width="201" height="222" alt=""/>
+            <img class="im4" date-time="2s" src="img/section5-05.png" width="207" height="223" alt=""/>
+            <img class="im5" date-time="2s" src="img/section5-05.png" width="207" height="223" alt=""/>
+        </div>
+        <div class="sec5-bg"></div>
+    </div>
+    <!--6-->
+    <div class="section section6">
+        <img class="img-t"  date-time="0.5s" src="img/section6-t.png" width="933" height="70" alt=""/>
+        <div class="sec6">
+            <div class="im1" date-time="1s"><img src="img/section6-02.png" alt=""/></div>
+            <div class="im2" date-time="1.5s" ><img src="img/section6-03.png" alt=""/></div>
+            <div class="im3" date-time="2s"><img src="img/section6-05.png" alt=""/></div>
+            <div class="im4" date-time="2.5s"><img src="img/section6-06.png" alt=""/></div>
+        </div>
+    </div>
+    <!--7-->
+    <div class="section section7">
+        <img class="img-t" date-time="0.5s" src="img/section7-t.png" width="933" height="70" alt=""/>
+        <div class="sec7">
+            <img class="im1" date-time="0.8s" src="img/section7-01.png" height="200" alt=""/>
+            <img class="im2" date-time="2s" src="img/section7-02.png" height="200" alt=""/>
+            <img class="im3" date-time="0.8s" src="img/section7-03.png" height="200" alt=""/>
+        </div>
+        <div class="sec7-2" date-time="1.5s">
+            <img src="img/section7-04.png" height="50" alt=""/>
+        </div>
+        <div class="sec7-2" date-time="2.5s">
+            <img src="img/section7-05.png" height="60" alt=""/>
+        </div>
+    </div>
+    <!--8-->
+    <div class="section section8">
+        <img class="img-t" src="img/section7-t.png" width="1013" height="72" alt=""/>
+        <div class="sec-8">
+            <div class="auto">
+                <p>如果您有相关的问题想了解，可以现在咨询我们</p>
+                <a class="hvr-bounce-to-bottom" href="#">免费注册</a>
+            </div>
+        </div>
+    </div>
+    <!--9-->
+    <div class="section section9 fp-auto-height" id="">
+        <!--foot-->
+        <div class="foot">
+            <div class="foot1">
+                <div class="auto clearfix">
+                    <div class="fl">
+                        <div class="foot1-1">
+                            <ul class="clearfix">
+                                <li class="hvr-bounce-to-bottom"><a href="http://www.qianmi.com/jobs/" target="_blank" title="诚聘英才">诚聘英才</a></li>
+                                <li class="hvr-bounce-to-bottom"><a href="http://www.qianmi.com/pay/" target="_blank" title="支付方式">支付方式</a></li>
+                                <li class="hvr-bounce-to-bottom"><a href="http://www.qianmi.com/contact.html" target="_blank" title="联系我们">联系我们</a></li>
+                                <li class="hvr-bounce-to-bottom"><a href="http://www.qianmi.com/statement" title="法律申明">法律申明</a></li>
+                            </ul>
+                        </div>
+                        <div class="foot1-2">
+                            友情链接：<a href="http://www.ofpay.com/" target="_blank" title="欧飞网">欧飞网</a>｜<a href="http://www.1000.com/" target="_blank" title="一千米">一千米</a>｜<a href="http://www.ttmai.com/"  target="_blank" title="天天买">天天买</a>
+                        </div>
+                        <div class="foot1-line"></div>
+                        <div class="foot1-3">
+                            <p><i class="iconfont icon-telephone"></i>售前咨询热线:   025-68586888-1</p>
+                            <p><i class="iconfont icon-telephone"></i>订单处理热线：400-166-1000</p>
+                        </div>
+                    </div>
+                    <div class="ewm-foot fr">
+                        <p>
+                            <img src="http://pic.qianmi.com/elife_qianmi_com/elife-two/img/ewm-1.jpg" width="130" height="130" alt="">
+                            <span>关注E生活订阅号</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="foot2">
+                <p>Copyright © 2013-2014 E生活elife.qianmi.com 版权所有 | 苏ICP备15008925号-1</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
