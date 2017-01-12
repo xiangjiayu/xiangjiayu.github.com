@@ -225,8 +225,21 @@ textarea {
   -moz-animation: txAnimation 6s ease infinite;
   -o-animation: txAnimation 6s ease infinite;
 }
+.index-bg .index-body .title {
+  display: block;
+  font-weight: bold;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 20px;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: zoomInDown;
+  animation-name: zoomInDown;
+}
 .index-bg .index-body ul {
-  margin-top: 40px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
 }
